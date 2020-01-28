@@ -81,6 +81,9 @@
 
 
 
+
+
+
 #1
 
 # mas1 = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
@@ -104,6 +107,7 @@
 
 
 
+
 # 2
 
 # mas2 = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
@@ -112,22 +116,120 @@
 
 
 
+
+# 3
+
 # res_index = mas2.index()
 
 # print(sum(res_index))
 # print(mas2)
 
 
+
+
+# 4
+
 # import copy
 # masA = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
 # masB = copy.deepcopy(masA)
 
-masA = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
-masB = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
 
-masA.sort()
-masB.sort()
 
-masC = masA.extend(masB)
 
-print(masC)
+# 5
+
+# masA = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
+# masB = [134, 32, 24, 52, 231, 532, 64, 42, 1, 3, 42, 42]
+
+# masA.sort()
+# masB.sort()
+
+# masC = masA + masB
+
+# print(masC)
+
+
+
+
+# • • • • • • • • 
+# • HOME  WORK  •
+# • • • • • • • • 
+
+
+# Задача №1 / №2
+
+# from random import randint
+
+# mas1 = [randint(-123, 123) for i in range(13)]
+
+# minN = min(mas1)
+# maxN = max(mas1)
+# minN_index = mas1.index(minN)
+# maxN_index = mas1.index(maxN)
+
+# print(mas1)
+
+# print("minN", minN)
+# print("maxN", maxN, "\n")
+
+# print("minN_index ", minN_index)
+# print("maxN_index ", maxN_index, "\n")
+
+# minimal = mas1[minN_index]
+
+# mas1[minN_index] = mas1[maxN_index]
+# mas1[maxN_index] = minimal
+
+# print("список з поміняними числами ", mas1)
+
+
+
+
+# Задача №3 
+#треба було б якось через цикл
+#//////// i = 0
+# while i < len(companies):
+#     print(companies[i])
+#     i += 1 ) //////
+
+
+# from random import randint
+
+# mas2 = [randint(1, 100) for i in range(10)]
+
+# print(mas2, " - простий список \n")
+
+# in1 = mas2[1]
+# mas2[1] = mas2[0]
+# mas2[0] = in1
+
+# in3 = mas2[3]
+# mas2[3] = mas2[2]
+# mas2[2] = in3
+
+# in5 = mas2[5]
+# mas2[5] = mas2[4]
+# mas2[4] = in5
+
+# in7 = mas2[7]
+# mas2[7] = mas2[6]
+# mas2[6] = in7
+
+# in9 = mas2[9]
+# mas2[9] = mas2[8]
+# mas2[8] = in9
+
+# print(mas2, " - змінений список \n")
+
+
+
+
+# Завдання №4
+
+# A = list(range(12, 36, 2))
+# B = A[:6]
+# C = A[6:12]
+
+# print(A, " - список А \n")
+# print(B, " - список B \n")
+# print(C, " - список C \n")
